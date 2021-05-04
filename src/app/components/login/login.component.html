@@ -1,0 +1,10 @@
+<div class="warraper">
+    <form [formGroup]="myForm" (ngSubmit)="handleSubmit()">
+        <input type="text" placeholder="username" formControlName="username">
+        <span *ngIf="myForm.controls.username.dirty && myForm.controls.username.invalid">username cannot be empty</span>
+        <input type="password" placeholder="password" formControlName="password">
+        <span *ngIf="myForm.controls.password.dirty && myForm.controls.password.invalid">password cannot be empty</span>
+        <input type="submit" value="Login" [disabled]="myForm.invalid">
+    </form>
+    <p>don't have account yet? <a routerLink="/register">Register</a></p>
+</div>

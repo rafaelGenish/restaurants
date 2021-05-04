@@ -1,0 +1,42 @@
+.container {
+    height: 90vh;
+    /* margin: 5% auto; */
+    width: 800px;
+    max-width: 80vw;
+    background-color: rgba(228, 185, 147, 0.959);
+}
+
+header {
+    height: 10%;
+}
+
+ul {
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 20px 20px;
+}
+
+a:hover, .active {
+    border: 2px whitesmoke solid;
+}
+.page {
+    border: 2px whitesmoke solid;
+    height: 90%;
+}
+
+app-login, 
+app-register, 
+app-main {
+    height: 100%;
+}
